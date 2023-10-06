@@ -1,0 +1,45 @@
+/* CSS for the container and columns */
+.container1 {
+    margin-left: -10vw;
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .column1 {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+#box11{
+    height: 36vh;
+    margin-top: 0vh;
+}
+#box12{
+    height: 36vh;
+      margin-top: 1.3vw;
+
+  }
+  /* CSS for the boxes */
+  .box {
+    height: 70vh;
+    width: 45vw;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .single-box {
+    background-color: #a0a0a0;
+    border: 1px;
+  }
+  
+  .vertical-box {
+    background-color: black;
+    color: #fff;
+  }
+  
