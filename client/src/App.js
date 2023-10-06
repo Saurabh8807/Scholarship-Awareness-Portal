@@ -16,6 +16,7 @@ import ResearchBased from "./components/user/ResearchBased";
 import InternatinalBased from "./components/user/InternatinalBased";
 import MinorityBased from "./components/user/MinorityBased";
 import Details from "./components/user/Details";
+import Eligibles from "./components/user/Eligibles";
 // Admin Pages
 import AddScholarship from "./components/admin/AddScholarship";
 import AdminDashboard from "./components/admin/AdminDashboard";
@@ -74,6 +75,7 @@ const App = () => {
           <Route path="/research-based-scholarships" element={<ResearchBased/>}/>
           <Route path="/minority-based-scholarships" element={<MinorityBased/>}/>
           <Route path="/Details" element={<Details/>}/>
+          <Route path="/Eligibles" element={<Eligibles/>}/>
 
           {/* Admin Pages */}
           <Route path="/add-scholarship" element={<AddScholarship />}></Route>
