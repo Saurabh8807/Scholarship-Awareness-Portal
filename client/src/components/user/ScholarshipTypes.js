@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Button , Row , Col} from "react-bootstrap";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import '../cssUser/ScholarshipTypes.css';
 
 const ScholarshipTypes = () => {
 
@@ -8,6 +9,7 @@ const ScholarshipTypes = () => {
 
   return (
     <>
+    <div className="grid-col-item custom-card">
       <section id="services">
         <div className="container service-section">
           <br />
@@ -18,10 +20,10 @@ const ScholarshipTypes = () => {
             data-aos-duration="1000"
           >
             <div className="grid-col-item">
-              <Card>
+            <Card>
                 <Card.Body>
                   <div className="icon">
-                    <svg
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -85,10 +87,10 @@ const ScholarshipTypes = () => {
               </Card>
             </div>
             <div className="grid-col-item">
-              <Card>
+            <Card>
                 <Card.Body>
                   <div className="icon">
-                    <svg
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -114,6 +116,7 @@ const ScholarshipTypes = () => {
                     </Button>
                     </Link>
                   </div>
+
                 </Card.Body>
               </Card>
             </div>
@@ -125,10 +128,10 @@ const ScholarshipTypes = () => {
             data-aos-duration="1000"
           >
             <div className="grid-col-item">
-              <Card>
+            <Card>
                 <Card.Body>
                   <div className="icon">
-                    <svg
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -159,10 +162,10 @@ const ScholarshipTypes = () => {
               </Card>
             </div>
             <div className="grid-col-item">
-              <Card>
+            <Card>
                 <Card.Body>
                   <div className="icon">
-                    <svg
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -192,10 +195,10 @@ const ScholarshipTypes = () => {
               </Card>
             </div>
             <div className="grid-col-item">
-              <Card>
+            <Card>
                 <Card.Body>
                   <div className="icon">
-                    <svg
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -227,6 +230,7 @@ const ScholarshipTypes = () => {
           </div></Row>
         </div>
       </section>
+      </div>
     </>
   );
 };
