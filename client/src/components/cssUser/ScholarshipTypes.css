@@ -1,0 +1,30 @@
+/* ScholarshipTypes.css */
+.custom-card {
+    /* background: linear-gradient(to bottom, #cec9c8, #d8d8d8); */
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .custom-card:hover {
+    /* background: linear-gradient(to bottom, #ff416c, #ff4b2b); */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .custom-card .featured_info {
+    margin-top: 20px;
+  }
+  
+  .custom-card .featured_info span {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .custom-card .featured_info p {
+    font-size: 16px;
+  }
+  
+  /* Add more custom styles as needed */
+  
