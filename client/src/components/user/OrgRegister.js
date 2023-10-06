@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import userRegister from "../../images/userRegister.jpg";
+import { Container, Row, Col, Form, Button,FormSelect  } from "react-bootstrap";
+import userRegister from "../../images/OrgRegister.png";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -41,9 +41,9 @@ const Register = () => {
           <Row>
             <Col>
               <Form onSubmit={PostData} method="POST">
-                <h2 style={{ textAlign: "center" }}>Student Registration</h2>
+                <h2 style={{ textAlign: "center" }}>Organization Registration</h2>
                 <Form.Group className="mb-3" controlId="formGroupName">
-                  <label>Name</label>
+                  <label>Organization's Name</label>
                   <input
                     className="form-control"
                     type="text"
@@ -55,7 +55,7 @@ const Register = () => {
                   />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formGroupEmail">
-                  <label>Email address</label>
+                  <label>Orgnization's Email address</label>
                   <input
                     className="form-control"
                     type="email"
@@ -90,6 +90,21 @@ const Register = () => {
                     onChange={(e) => setConfirmPassword(e.target.value)}
                   />
                 </Form.Group>
+                <Form.Group className="mb-3" controlId="formGroupRole">
+  <label>Role</label>
+  <Form.Select
+    aria-label="Select your role"
+    name="role" // You can use this value to get the selected role in your state
+    onChange={(e) => {
+      // Handle the selected role here, e.g., set it in state
+      // Example: setSelectedRole(e.target.value);
+    }}
+  >
+    <option value="">Select a Entity</option>
+    <option value="student">Government</option>
+    <option value="teacher">Private</option>
+  </Form.Select>
+</Form.Group>
                 <Button type="submit">Register</Button>
                 <br />
                 <br />
@@ -97,7 +112,7 @@ const Register = () => {
                   <p>
                     Already Registered?{" "}
                     <span>
-                      <a href="/login">Login</a>
+                      <a href="/OrgLogin">Login</a>
                     </span>
                   </p>
                 </div>

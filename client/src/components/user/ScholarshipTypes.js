@@ -38,6 +38,48 @@ const ScholarshipTypes = () => {
                     </svg>
                   </div>
                   <div className="featured_info">
+                    <span>Government Scholarship</span>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore ratione facilis animi voluptas exercitationem
+                      molestiae.
+                    </p>
+                    <Link to={"/government-based-scholarships"}>
+                    <Button variant="primary" style={{ width: "200px" }} >
+                      View Scholarships
+                    </Button>
+                    </Link>
+                  </div>
+                </Card.Body>
+              </Card>
+            </div>
+            </div>
+          </Row>
+          <Row>
+          <div
+            className="grid-cols-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div className="grid-col-item">
+            <Card>
+                <Card.Body>
+                  <div className="icon">
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </div>
+                  <div className="featured_info">
                     <span>Merit Based Scholarship</span>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -228,6 +270,7 @@ const ScholarshipTypes = () => {
               </Card>
             </div>
           </div></Row>
+          
         </div>
       </section>
       </div>
