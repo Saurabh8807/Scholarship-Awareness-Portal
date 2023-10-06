@@ -1,14 +1,19 @@
 .rectangular-component {
     border-radius: 15px;
-    height: 90vh;
-    margin-top: -40vh;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-    margin: 10px;
-    background-color: rgb(45,45,45);
-  }
+  height: 90vh;
+  margin-top: -40vh;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  background-color: rgb(45, 45, 45);
+  background-image: url('https://scholarshipowl.com/_ipx/_/images/components/homePage/problemSection/problem-bg2-s.svg');
+  background-size: 15%; /* Adjust the background size as needed (e.g., 50% for 50% of its original size) */
+  background-position: top left; /* Position the background image at the top left corner */
+  background-repeat: no-repeat;
+}
+
   .addImg{
     margin-top: -10vh;
     margin-right: 20vw;
@@ -23,13 +28,18 @@
   .image-container {
     flex: 1;
     text-align: right;
-    height: 50vh;
-    margin-top: -10vh;
+    height: 70vh;
+    margin-top: 10vh;
+  }
+
+  img.addImg {
+    max-width: 100%; /* Allow the image to expand up to its original width */
+    max-height: 100%; /* Allow the image to expand up to its original height */
   }
   
   img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
   }
   .sen{
     margin-top:-15vh ;
