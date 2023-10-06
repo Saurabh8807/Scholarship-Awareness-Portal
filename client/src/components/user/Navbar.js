@@ -1,9 +1,9 @@
-import React, { useState, useContext } from "react";
-import { Button, Form, NavDropdown } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
-import "../../App.css";
-import { UserContext } from "../../context/auth";
+import React, { useState, useContext } from 'react';
+import { Button, Form, NavDropdown } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import '../../App.css';
+import { UserContext } from '../../context/auth';
 
 const Navbar = () => {
   const {
@@ -12,21 +12,21 @@ const Navbar = () => {
     user,
     setUser,
     adminLoggedIn,
-    setAdminLoggedIn,
+    setAdminLoggedIn
   } = useContext(UserContext);
 
   const navigate = useNavigate();
 
   const handleLogout = async () => {
-    alert("Logged Out Successfully");
-    navigate("/");
+    alert('Logged Out Successfully');
+    navigate('/');
     setUser(null);
     setLoggedIn(false);
     setAdminLoggedIn(false);
-    localStorage.removeItem("loggedIn");
-    localStorage.removeItem("adminLoggedIn");
-    localStorage.removeItem("user");
-    localStorage.removeItem("email");
+    localStorage.removeItem('loggedIn');
+    localStorage.removeItem('adminLoggedIn');
+    localStorage.removeItem('user');
+    localStorage.removeItem('email');
     // refresh page after submit is done
     window.location.reload();
   };
@@ -38,7 +38,7 @@ const Navbar = () => {
         <nav className="nav">
           <div className="logo" data-aos="fade-down" data-aos-duration="100">
             {/* <a href="/" style={{ textDecoration: "none" }}> */}
-              <h2> छात्रवृत्ति </h2>
+            <h2> Scholarix </h2>
             {/* </a> */}
           </div>
           <div className="nav_menu" id="nav_menu">
@@ -55,7 +55,7 @@ const Navbar = () => {
                   <a
                     href="/"
                     className="nav_menu_link"
-                    style={{ textDecoration: "none" }}
+                    style={{ textDecoration: 'none' }}
                   >
                     Home
                   </a>
@@ -73,7 +73,7 @@ const Navbar = () => {
                   <a
                     href="/scholarships"
                     className="nav_menu_link"
-                    style={{ textDecoration: "none" }}
+                    style={{ textDecoration: 'none' }}
                   >
                     Scholarships
                   </a>
@@ -90,7 +90,7 @@ const Navbar = () => {
                   <a
                     href="/scholarship_information"
                     className="nav_menu_link"
-                    style={{ textDecoration: "none" }}
+                    style={{ textDecoration: 'none' }}
                   >
                     Information
                   </a>
@@ -107,7 +107,7 @@ const Navbar = () => {
                   <a
                     href="/contact"
                     className="nav_menu_link"
-                    style={{ textDecoration: "none" }}
+                    style={{ textDecoration: 'none' }}
                   >
                     Contact Us
                   </a>
@@ -118,19 +118,21 @@ const Navbar = () => {
 
               {loggedIn ? (
                 <li
-                className="nav_menu_item"
-                data-aos="fade-down"
-                data-aos-duration="800"
-              >
-                <a
-                  href="/user-dashboard"
-                  className="nav_menu_link"
-                  style={{ textDecoration: "none" }}
+                  className="nav_menu_item"
+                  data-aos="fade-down"
+                  data-aos-duration="800"
                 >
-                  Profile
-                </a>
-              </li>
-              ) : (<></>)}
+                  <a
+                    href="/user-dashboard"
+                    className="nav_menu_link"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    Profile
+                  </a>
+                </li>
+              ) : (
+                <></>
+              )}
 
               <li
                 className="nav_menu_item"
@@ -141,11 +143,12 @@ const Navbar = () => {
                   <button className="btn btn-primary-outline">
                     <NavDropdown title="Login" id="basic-nav-dropdown">
                       <NavDropdown.Item href="/login">
-                        <i className="ri-account-circle-line"/>
-                        <span>  Student</span></NavDropdown.Item>
+                        <i className="ri-account-circle-line" />
+                        <span> Student</span>
+                      </NavDropdown.Item>
                       <NavDropdown.Item href="/admin_login">
-                        <i className="ri-admin-fill"/>
-                        <span>  Admin</span>
+                        <i className="ri-admin-fill" />
+                        <span> Admin</span>
                       </NavDropdown.Item>
                     </NavDropdown>
                   </button>
