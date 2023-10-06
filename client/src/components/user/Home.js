@@ -79,8 +79,9 @@ const Home = () => {
           </p>
         </div>
         <div className="image-container">
-          <img className="addImg" src={addImg} alt="Image123" />
+          <img className="addImg" src="https://scholarshipowl.com/_ipx/_/images/components/homePage/problemSection/problem-bg-s.svg" alt="Image123" />
         </div>
+
       </div>
 
       <div id="scholarship-info">
