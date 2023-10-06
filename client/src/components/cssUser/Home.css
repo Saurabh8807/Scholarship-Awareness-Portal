@@ -27,13 +27,18 @@
   .image-container {
     flex: 1;
     text-align: right;
-    height: 50vh;
-    margin-top: -10vh;
+    height: 70vh;
+    margin-top: 10vh;
+  }
+
+  img.addImg {
+    max-width: 100%; /* Allow the image to expand up to its original width */
+    max-height: 100%; /* Allow the image to expand up to its original height */
   }
   
   img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
   }
   .sen{
     margin-top:-15vh ;
