@@ -86,24 +86,47 @@ const Home = () => {
       <div id="scholarship-info">
         <h1
           style={{
+            marginTop:"5vh",
+            fontWeight:"bolder",
+            fontSize:"50",
             textAlign: 'center',
             fontFamily: 'sans-serif',
             color: '#212529'
           }}
         >
-          Your one-stop scholarship application system
+          Your one-stop scholarship<br/> application system
         </h1>
+        <br/>
         <div style={{ fontFamily: 'sans-serif', display: 'flex' }}>
-          <div>
             <img src="https://scholarshipowl.com/_ipx/fit_outside,s_795x815/images/components/homePage/featureSet1Section/girl.png" />
-          </div>
+        <div style={{width:"40vw",marginLeft:"5vw",marginTop:"5vh",fontFamily:"sans-serif"}}>
           <div>
-            <h3>Personalized vetted scholarship matches</h3>
-            <p>
+            <h3 style={{fontFamily:"sans-serif",fontWeight:"bold"}}>Personalized vetted scholarship matches</h3>
+            <p style={{fontFamily:"sans-serif",fontSize:"18"}}>
               Get matched to scholarships that are most relevant to you. View
               scholarship credibility scores to know where to focus your time
               and energy.
             </p>
+            <br/>
+            <h3 style={{fontFamily:"sans-serif",fontWeight:"bold"}}>Apply without leaving the platform</h3>
+            <p style={{fontFamily:"sans-serif",fontSize:"18"}}>
+            The entire search, match and application process happens all in one place. You can even write, edit and proof your essays right in the platform!
+            </p>
+            <br/>
+            <h3 style={{fontFamily:"sans-serif",fontWeight:"bold"}}>Receive customized recommendations</h3>
+            <p style={{fontFamily:"sans-serif",fontSize:"18"}}>
+            Our smart system utilizes AI to generate scholarship recommendations tailored just for you, based on your profile and habits.
+            </p>
+            <br/>
+            <h3 style={{fontFamily:"sans-serif",fontWeight:"bold"}}>Quickly apply for similar scholarships</h3>
+            <p style={{fontFamily:"sans-serif",fontSize:"18"}}>
+            Each time you apply, our AI will suggest scholarships with a similar topic or requirement. You can even repurpose your essays to apply for them!
+            </p>
+            <br/>
+            <h3 style={{fontFamily:"sans-serif",fontWeight:"bold"}}>Access to Application Deadlines and Reminders</h3>
+            <p style={{fontFamily:"sans-serif",fontSize:"18"}}>
+            Never miss a scholarship opportunity with deadline reminders tailored to your interests.  </p>
+            </div>
           </div>
         </div>
       </div>
