@@ -1,6 +1,8 @@
 import React from 'react'
 import { Card , Row , Col } from 'react-bootstrap'
 import scholarshipImage from '../../../../client/src/images/scholarship.jpg'
+import addImg from "../../images/addImage.png"
+import "../cssUser/Home.css"
 
 const Home = () => {
   return (
@@ -37,6 +39,23 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <div className="rectangular-component">
+      <div className="text-container">
+        <p className='sen'>
+        <span class="sentence">Applying for <br/>scholarships is overwhelming</span>
+        <span class="sentence"><br/>But without scholarships, your ability to go to college is at risk</span>
+        <span class="sentence"><br/><br/>...............................................</span>
+        <span class="sentence"><br/><br/><br/>Students should be able to focus on their education rather than worrying about how to pay for it</span>
+        <span class="sentence"><br/>We know it’s not fair</span>
+
+            </p>
+      </div>
+      <div className="image-container">
+        <img className="addImg"src={addImg} alt="Image123" />
+      </div>
+    </div>
+
       <div id="statistics">
         <div className="container service-section">
         <h1>Statistics</h1>
