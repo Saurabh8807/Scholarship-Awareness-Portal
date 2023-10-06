@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { UserContext } from "../../context/auth";
 
-const Login = () => {
+const OrgLogin = () => {
 
   const { loggedIn,
     setLoggedIn,
@@ -27,7 +27,7 @@ const Login = () => {
       });
       if (res && res.data.success) {
         alert(res.data.message);
-        navigate("/scholarships");
+        navigate("/OrgDash");
         setLoggedIn(true);
         setAdminLoggedIn(false);
         setUser({user: res.data.email });
@@ -54,7 +54,7 @@ const Login = () => {
           </Col>
           <Col>
             <Form onSubmit={PostData} method="POST">
-              <h2 style={{ textAlign: "center" }}>Student Login</h2>
+              <h2 style={{ textAlign: "center" }}>Organization Login</h2>
               <Form.Group className="mb-3" controlId="formGroupEmail">
                 <Form.Label>Email address</Form.Label>
                 <input
@@ -80,7 +80,7 @@ const Login = () => {
                 />
               </Form.Group>
               <Button type="submit">LOGIN</Button> <span> or </span>
-              <a href="/register">
+              <a href="/OrgRegister">
                 <Button variant="outline-primary">Register</Button>
               </a>
             </Form>
@@ -91,4 +91,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default OrgLogin;

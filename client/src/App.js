@@ -5,6 +5,7 @@ import Home from "./components/user/Home";
 import Information from "./components/user/Information";
 import Contact from "./components/user/Contact";
 import Login from "./components/user/Login";
+import Orglogin from "./components/user/OrgLogin";
 import Register from "./components/user/Register";
 import ScholarshipTypes from "./components/user/ScholarshipTypes";
 import ViewUserScholarships from "./components/user/ViewUserScholarships";
@@ -17,6 +18,8 @@ import InternatinalBased from "./components/user/InternatinalBased";
 import MinorityBased from "./components/user/MinorityBased";
 import Details from "./components/user/Details";
 import Eligibles from "./components/user/Eligibles";
+
+
 // Admin Pages
 import AddScholarship from "./components/admin/AddScholarship";
 import AdminDashboard from "./components/admin/AdminDashboard";
@@ -27,6 +30,9 @@ import StudentDetails from "./components/admin/StudentDetails";
 import UpdateScholarship from "./components/admin/UpdateScholarship";
 import ViewScholarships from "./components/admin/ViewScholarships";
 import axios from "axios";
+import Question from "./components/user/Question";
+import OrgRegister from "./components/user/OrgRegister";
+import Government from "./components/user/GovernmentBased";
 
 import { UserProvider } from "./context/auth";
 import PrivateRoute from "./context/PrivateRoute";
@@ -36,6 +42,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 // Routing
 import { Route, Routes } from "react-router-dom";
+import GovernmentBased from "./components/user/GovernmentBased";
 
 const App = () => {
   useEffect(() => {
@@ -69,6 +76,7 @@ const App = () => {
             element={<ApplicationForm />}
           ></Route>
           <Route path="/user-dashboard" element={<UserDashboard/>}/>
+          <Route path="/government-based-scholarships" element={<GovernmentBased/>}/>
           <Route path="/merit-based-scholarships" element={<MeritBased/>}/>
           <Route path="/need-based-scholarships" element={<NeedBased/>}/>
           <Route path="/international-based-scholarships" element={<InternatinalBased/>}/>
@@ -90,6 +98,9 @@ const App = () => {
             path="/adminDashboard/previousApplicationsDetails"
             element={<PreviousApplicationDetails />}
           />
+          <Route path="/Question" element={<Question/>}/>
+          <Route path="/OrgLogin" element={<Orglogin/>}/>
+          <Route path="/OrgRegister" element={<OrgRegister/>}/>
           <Route
             path="/update-scholarship/:id"
             element={<UpdateScholarship />}

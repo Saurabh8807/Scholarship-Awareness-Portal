@@ -4,6 +4,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../../App.css';
 import { UserContext } from '../../context/auth';
+import '../cssUser/Navbar.css';
+import logo from '../../images/logo.png'
 
 const Navbar = () => {
   const {
@@ -36,11 +38,14 @@ const Navbar = () => {
       <header className="container header">
         {/* ==== NAVBAR ==== */}
         <nav className="nav">
-          <div className="logo" data-aos="fade-down" data-aos-duration="100">
-            {/* <a href="/" style={{ textDecoration: "none" }}> */}
-            <h2> Scholarix </h2>
-            {/* </a> */}
-          </div>
+        <div className="logo" data-aos="fade-down" data-aos-duration="100">
+        {/* Link to the homepage or use any other route */}
+        <a href="/" >
+          {/* Replace 'your-logo.png' with the actual image file name and path */}
+          <img src={logo} alt="Scholarix Logo" />
+        </a>
+      </div>
+
           <div className="nav_menu" id="nav_menu">
             <button className="close_btn" id="close_btn">
               <i className="ri-close-fill" />
@@ -52,13 +57,15 @@ const Navbar = () => {
                   data-aos="fade-down"
                   data-aos-duration="200"
                 >
+
                   <a
                     href="/"
-                    className="nav_menu_link"
+                    className="nav_menu_link "
                     style={{ textDecoration: 'none' }}
-                  >
+                    >
                     Home
                   </a>
+                    
                 </li>
               ) : (
                 <></>
@@ -142,9 +149,9 @@ const Navbar = () => {
                 {!loggedIn && !adminLoggedIn ? (
                   <button className="btn btn-primary-outline">
                     <NavDropdown title="Login" id="basic-nav-dropdown">
-                      <NavDropdown.Item href="/login">
+                      <NavDropdown.Item href="/Question">
                         <i className="ri-account-circle-line" />
-                        <span> Student</span>
+                        <span> User</span>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="/admin_login">
                         <i className="ri-admin-fill" />
