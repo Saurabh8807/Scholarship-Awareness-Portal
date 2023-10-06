@@ -1,0 +1,77 @@
+/* Question.css */
+
+.question-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Background color for the page */
+  }
+  .QImg{
+    height: 50vh;
+    margin-top: -40vh;
+  }
+  .question-container {
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    height: 20vh;
+    margin-top: 40vh;
+    margin-left: -26vw;
+    width: 30vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .option-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .option-button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+  }
+  
+  .option-button.selected {
+    background-color: #009933; /* Selected button background color */
+  }
+  
+  .selected-option {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .submit-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #009933; /* Submit button background color */
+    color: #ffffff; /* Submit button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #007d2a; /* Submit button background color on hover */
+  }
+  

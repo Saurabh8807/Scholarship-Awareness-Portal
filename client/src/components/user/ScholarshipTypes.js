@@ -40,9 +40,7 @@ const ScholarshipTypes = () => {
                   <div className="featured_info">
                     <span>Merit Based Scholarship</span>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Tempore ratione facilis animi voluptas exercitationem
-                      molestiae.
+                    Awarded based on academic excellence, achievements, or skills. Encourages students to excel in their studies and often covers tuition and fees.
                     </p>
                     <Link to={"/merit-based-scholarships"}>
                       <Button variant="primary" style={{ width: "200px" }}>
@@ -72,12 +70,11 @@ const ScholarshipTypes = () => {
                     </svg>
                   </div>
                   <div className="featured_info">
-                    <span>Need Based Scholarship</span>
+                    <span>Government Scholarship</span>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ut ipsum esse corrupti. Quo, labore debitis!
+                    Funded by governments to support education. Promotes national development and provides financial assistance to citizens pursuing higher education.
                     </p>
-                    <Link to={"/need-based-scholarships"}>
+                    <Link to={"/government-based-scholarships"}>
                     <Button variant="primary" style={{ width: "200px" }} >
                       View Scholarships
                     </Button>
@@ -107,8 +104,7 @@ const ScholarshipTypes = () => {
                   <div className="featured_info">
                     <span>International Scholarships</span>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Non nostrum voluptate totam ipsa corrupti vero!
+                    Offered to foreign students pursuing education abroad. Promotes diversity and cultural exchange, often covering tuition and living expenses.
                     </p>
                     <Link to={"/international-based-scholarships"}>
                     <Button variant="primary" style={{ width: "200px" }} >
@@ -148,9 +144,7 @@ const ScholarshipTypes = () => {
                   <div className="featured_info">
                     <span>Minority Scholarship</span>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Tempore ratione facilis animi voluptas exercitationem
-                      molestiae.
+                    Aids underrepresented minority groups, such as racial or ethnic minorities, LGBTQ+ individuals, or women, in pursuing higher education by providing financial assistance and equal opportunities.
                     </p>
                     <Link to={"/minority-based-scholarships"}>
                     <Button variant="primary" style={{ width: "200px" }} >
@@ -182,8 +176,7 @@ const ScholarshipTypes = () => {
                   <div className="featured_info">
                     <span>Research Scholarship</span>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ut ipsum esse corrupti. Quo, labore debitis!
+                    Supports students engaged in research projects. Funds research-related expenses, such as equipment and travel, to advance academic knowledge.
                     </p>
                     <Link to={"/research-based-scholarships"}>
                     <Button variant="primary" style={{ width: "200px" }}>
@@ -215,8 +208,7 @@ const ScholarshipTypes = () => {
                   <div className="featured_info">
                     <span>All Scholarships</span>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Non nostrum voluptate totam ipsa corrupti vero!
+                    National Scholarship Portal (NSP) is one of the most prominent scholarship portals launched by the Ministry of Electronics and Information Technology, Government of India.
                     </p>
                     <Link to="/view-scholarships">
                     <Button variant="primary" style={{ width: "200px" }} >
@@ -228,6 +220,7 @@ const ScholarshipTypes = () => {
               </Card>
             </div>
           </div></Row>
+          
         </div>
       </section>
       </div>
