@@ -1,151 +1,151 @@
 .rectangular-component {
-    border-radius: 15px;
-  height: 90vh;
-  /* margin-top: -160vh; */
-  /* margin-bottom: 105vw; */
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  border: 1px solid #ccc;
-  margin: 10px;
-  background-color: rgb(45, 45, 45);
-  background-image: url('https://scholarshipowl.com/_ipx/_/images/components/homePage/problemSection/problem-bg2-s.svg');
-  background-size: 15%; /* Adjust the background size as needed (e.g., 50% for 50% of its original size) */
-  background-position: top left; /* Position the background image at the top left corner */
-  background-repeat: no-repeat;
+  border-radius: 15px;
+height: 90vh;
+/* margin-top: -160vh; */
+/* margin-bottom: 105vw; */
+display: flex;
+align-items: center;
+padding: 20px;
+border: 1px solid #ccc;
+margin: 10px;
+background-color: rgb(45, 45, 45);
+background-image: url('https://scholarshipowl.com/_ipx/_/images/components/homePage/problemSection/problem-bg2-s.svg');
+background-size: 15%; /* Adjust the background size as needed (e.g., 50% for 50% of its original size) */
+background-position: top left; /* Position the background image at the top left corner */
+background-repeat: no-repeat;
 }
 
-  .addImg{
-    margin-top: -10vh;
-    margin-right: 20vw;
-    height: 70vh;
-  }
-  .text-container {
-    flex: 1;
-    padding-right: 20px;
-    height: 50vh;
-  }
-  
-  .image-container {
-    flex: 1;
-    text-align: right;
-    height: 70vh;
-    margin-top: 10vh;
-  }
+.addImg{
+  margin-top: -10vh;
+  margin-right: 20vw;
+  height: 70vh;
+}
+.text-container {
+  flex: 1;
+  padding-right: 20px;
+  height: 50vh;
+}
 
-  img.addImg {
-    max-width: 100%; /* Allow the image to expand up to its original width */
-    max-height: 100%; /* Allow the image to expand up to its original height */
-  }
-  
-  img {
-    max-width: 100%;
-    height: 100%;
-  }
-  .sen{
-    margin-top:-15vh ;
-    margin-left: 1vw;
-  }
-  /* Define different styles for each sentence */
+.image-container {
+  flex: 1;
+  text-align: right;
+  height: 70vh;
+  margin-top: 10vh;
+}
+
+img.addImg {
+  max-width: 100%; /* Allow the image to expand up to its original width */
+  max-height: 100%; /* Allow the image to expand up to its original height */
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
+.sen{
+  margin-top:-15vh ;
+  margin-left: 1vw;
+}
+/* Define different styles for each sentence */
 .sentence:nth-child(1) {
-    margin-bottom: 20vh;
-    font-size: 10vh;
-    /* font-weight: 1000; */
-    font-weight: bolder;
-    /* font-family: sans-serif; */
-    color: rgb(255, 255, 255);
+  margin-bottom: 20vh;
+  font-size: 10vh;
+  /* font-weight: 1000; */
+  font-weight: bolder;
+  /* font-family: sans-serif; */
+  color: rgb(255, 255, 255);
 }
 
 .sentence:nth-child(2) {
-    font-size: 5vh;
-    font-family: sans-serif;
-    font-style: italic;
-    color: rgb(255, 255, 255);
-  }
-  
-  .sentence:nth-child(3) {
-    font-family: sans-serif;
-    color: rgb(255, 255, 255);
+  font-size: 5vh;
+  font-family: sans-serif;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+}
+
+.sentence:nth-child(3) {
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
 }
 
 .sentence:nth-child(4) {
-    font-family: sans-serif;
-    /* font-weight: bold; */
-    
+  font-family: sans-serif;
+  /* font-weight: bold; */
+  
+  color: rgb(255, 255, 255);
+}
+
+.btn11{
+  height: 20vh;
+  margin-left: -15vw;
+  color:rgb(255, 255, 255);
+}
+.btn12{
+
+}
+.sentence:nth-child(5){
+
     color: rgb(255, 255, 255);
+    font-family: sans-serif;
   }
-
-  .btn11{
-    height: 20vh;
+  .button-container1 {
+    display: flex;
+    width: 110vw;
     margin-left: -15vw;
-    color:rgb(255, 255, 255);
-  }
-  .btn12{
-
-  }
-  .sentence:nth-child(5){
-
-      color: rgb(255, 255, 255);
-      font-family: sans-serif;
-    }
-    .button-container1 {
-      display: flex;
-      width: 110vw;
-      margin-left: -15vw;
-      margin-top: -6vh;
-      background-color: f6f7fb;
-      justify-content: space-between;
-      padding: 20px 0;
-    }
-    
-    .button-wrapper1 {
-      flex: 1; /* Equal width for both buttons */
-      text-align: center;
-    }
-    
-    .btn1 {
-      /* background-color: #335eea; */
-      color: #fff;
-      padding: 10px 0;
-      border: none;
-      border-radius: 0;
-      cursor: pointer;
-      display: inline-block;
-      font-size: 18px;
-      text-transform: uppercase;
-      transition: background-color 0.3s ease;
-      width: 100%; /* Button spans full width */
-    }
-    
-    .btn i {
-      margin-left: 10px;
-    }
-    
-    /* Unique styling for the "Eligible Scholarships" button */
-    #eligible-button {
-      height: 12vh;
-      width: 35vw;
-    font-size: 35px;
-    color:white;
-    background-color: #335eea;
-    margin-left: 25vw;
-    margin-top: 4vh;
+    margin-top: -6vh;
+    background-color: f6f7fb;
+    justify-content: space-between;
+    padding: 20px 0;
   }
   
-  /* Unique styling for the "View Scholarships" button */
-  #view-button {
-    margin-top: 4vh;
-    color:white;
-      font-size: 35px;
-      width: 35vw;
-      margin-left:-5vw;
-      /* padding: 10px; */
-      height: 12vh;
-      background-color: #494db3;
-      /* color: #335eea; */
-    }
-    
-    .view-more-btn:hover {
-      /* background-color: #1e428a; */
-    }
-    
+  .button-wrapper1 {
+    flex: 1; /* Equal width for both buttons */
+    text-align: center;
+  }
+  
+  .btn1 {
+    /* background-color: #335eea; */
+    color: #fff;
+    padding: 10px 0;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Button spans full width */
+  }
+  
+  .btn i {
+    margin-left: 10px;
+  }
+  
+  /* Unique styling for the "Eligible Scholarships" button */
+  #eligible-button {
+    height: 12vh;
+    width: 35vw;
+  font-size: 35px;
+  color:white;
+  background-color: #335eea;
+  margin-left: 25vw;
+  margin-top: 4vh;
+}
+
+/* Unique styling for the "View Scholarships" button */
+#view-button {
+  margin-top: 4vh;
+  color:white;
+    font-size: 35px;
+    width: 35vw;
+    margin-left:-5vw;
+    /* padding: 10px; */
+    height: 12vh;
+    background-color: #494db3;
+    /* color: #335eea; */
+  }
+  
+  .view-more-btn:hover {
+    /* background-color: #1e428a; */
+  }
+  

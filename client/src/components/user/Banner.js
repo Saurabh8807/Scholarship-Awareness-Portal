@@ -87,7 +87,9 @@ const Banner = () => {
           </button>
         </a>
       </div>
-    </div>
+
+    
+      </div>
             <div
               className="grid-item-1"
               data-aos="fade-up"
