@@ -1,45 +1,41 @@
-/* CSS for the container and columns */
-.container1 {
-    margin-left: -10vw;
-    width: 95vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-  }
-  
-  .column1 {
-    flex: 1;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
-#box11{
-    height: 36vh;
-    margin-top: 0vh;
+.sentence31{
+  /* margin-top: 10vh; */
+  font-size: 48px;
+  font-weight: 800;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#box12{
-    height: 36vh;
-      margin-top: 1.3vw;
+.addImg31{
+  height: 70vh;
+}
 
-  }
-  /* CSS for the boxes */
-  .box {
-    height: 70vh;
-    width: 45vw;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .single-box {
-    background-color: #a0a0a0;
-    border: 1px;
-  }
-  
-  .vertical-box {
-    background-color: black;
-    color: #fff;
-  }
-  
+.rectangular-component31{
+  margin-top: -7vh;
+  /* background-color: #f9f9f9; */
+  /* background: linear-gradient(to bottom,
+  rgba(194, 188, 188, 0.3) -50%,
+  #F9F9F9 90%); */
+}
+.sentence13{
+  /* margin-top: 10vh; */
+  font-size: 20px;
+  /* color: rgb(128, 120, 120); */
+  font-weight: 500;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration:
+none solid rgb(122, 122, 122)
+}
+.text-container31{
+  margin-top: 5vh;
+  margin-left: 5vw;
+  width: 40vw;
+  display: flex;
+}
+.image-container41{
+  margin-top: 20vh;
+  /* margin-left: 45vw; */
+  margin-left: 55vw;
+  margin-top: -70vh;
+  margin-bottom: 10vh;
+  height:50vh ;
+  /* margin-top: -55vh; */
+}

@@ -1,43 +1,91 @@
-import React from 'react';
-import '../cssUser/Banner.css'; // Create a CSS file for styling\
-import '../cssUser/Home.css';
+import React from "react";
+import "../cssUser/Banner.css"; // Create a CSS file for styling\
+// import '../cssUser/Home.css';
+import { useNavigate , Link} from "react-router-dom";
 
 const Banner = () => {
+  // const navigate = useNavigate();
+  // const redirectToEligibility = () => {
+  //   navigate("/eligibles");
+  // };
+
+  // const redirectToScholarship = () => {
+  //   navigate("/Scholarship");
+  // };
   return (
     <>
-    {/* <div className="banner column">
-      <div className="rectangular-component">
-        <div className="text-container">
-          <p className='sen'>
-            <span class="sentence">
-              We know it’s not fair
+      <div className="rectangular-component31">
+        <div className="text-container31">
+          <p className="sen31">
+            <span class="sentence31">
+              We believe that education should be affordable and accessible to
+              all.
+            </span>
+            <span class="sentence13">
+              <br />
+              Through our AI-powered tools and technology, ScholarshipOwl
+              connects students to the right scholarships that enable them to
+              graduate debt-free.
             </span>
           </p>
         </div>
-      <div className="column rectangular-component">
-        <img src="https://www.scholarshipsgov.in/wp-content/uploads/2021/09/National_Merit_Scholarship-880x586-1.jpg" alt="Image 1" />
-        <h2>Column 1</h2>
-        <p>This is the content of column 1.</p>
-      </div>
-      <div className="column rectangular-component">
-        <img src="https://www.scholarshipsgov.in/wp-content/uploads/2021/09/National_Merit_Scholarship-880x586-1.jpg" alt="Image 2" />
-        <h2>Column 2</h2>
-        <p>This is the content of column 2.</p>
-      </div>
+        {/* <Link to="/eligibles">
+          
+          
+        <button
+          className="btn view_more_btn"
+          // onClick={redirectToEligibility}
+          style={{
+            height: "12vh",
+            fontSize: "20px",
+            marginBottom: "-4vh",
+            marginTop: "5vh",
+            marginLeft: "5vw",
+            backgroundColor: "#335eea",
+            color: "#fff",
+            width: "235px",
+            borderRadius: "20px",
+          }}
+          >
+          Eligible Scholarship
+        </button>
+          </Link>
+          <Link to="/Scholarship">
 
+        <button
+          className="btn view_more_btn"
+          // onClick={redirectToScholarship}
+          style={{
+            height: "12vh",
+            marginBottom: "-4vh",
+            fontSize: "20px",
+            marginTop: "5vh",
+            marginLeft: "5vw",
+            backgroundColor: "#335eea",
+            color: "#fff",
+            width: "235px",
+            borderRadius: "20px",
+          }}
+          >
+          View Scholarship
+        </button>
+            </Link> */}
+            <div
+              className="grid-item-1"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+            </div>
+
+        <div className="image-container41">
+          <img
+            className="addImg31"
+            src="https://scholarshipowl.com/_ipx/_/images/components/about-us/megaphone-girl.png"
+            alt="Image123"
+          />
+        </div>
       </div>
-    </div> */}
-      <div className="container1">
-      <div className="column1">
-        <div className="box single-box box">Single Box</div>
-      </div>
-      <div className="column">
-        <div className="box vertical-box " id='box11'> Vertical Box 1</div>
-        <div className="box vertical-box" id='box12'>Vertical Box 2</div>
-      </div>
-    </div>
     </>
-    
   );
 };
 

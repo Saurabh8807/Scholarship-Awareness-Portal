@@ -37,9 +37,9 @@ import StudentDetails from "./components/admin/StudentDetails";
 import UpdateScholarship from "./components/admin/UpdateScholarship";
 import ViewScholarships from "./components/admin/ViewScholarships";
 import axios from "axios";
-import Question from "./components/user/Question";
-import OrgRegister from "./components/user/OrgRegister";
-import Government from "./components/user/GovernmentBased";
+// import Question from "./components/user/Question";
+// import OrgRegister from "./components/user/OrgRegister";
+// import Government from "./components/user/GovernmentBased";
 
 import { UserProvider } from "./context/auth";
 import PrivateRoute from "./context/PrivateRoute";
