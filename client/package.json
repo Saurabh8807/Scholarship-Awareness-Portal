@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "proxy": "https://scholarship-awareness-portal-api.onrender.com",
+  "proxy": "https://scholarship-portal-3aks.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
