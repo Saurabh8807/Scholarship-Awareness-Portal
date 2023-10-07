@@ -1,23 +1,17 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Button, Form, NavDropdown } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
 import '../../App.css';
 import { UserContext } from '../../context/auth';
 import '../cssUser/Navbar.css';
-import logo from '../../images/logo.png'
+import logo from '../../images/logo.png';
+import altLogo from '../../images/alt_logo.png'; // Add an alternative logo image
 
 const Navbar = () => {
-  const {
-    loggedIn,
-    setLoggedIn,
-    user,
-    setUser,
-    adminLoggedIn,
-    setAdminLoggedIn
-  } = useContext(UserContext);
-
+  const { loggedIn, setLoggedIn, user, setUser, adminLoggedIn, setAdminLoggedIn } = useContext(UserContext);
   const navigate = useNavigate();
+  const location = useLocation(); // Get the current route location
 
   const handleLogout = async () => {
     alert('Logged Out Successfully');
@@ -32,19 +26,30 @@ const Navbar = () => {
     // refresh page after submit is done
     window.location.reload();
   };
+
   const [navShow, setNavShow] = useState(false);
+  const [dynamicLogo, setDynamicLogo] = useState(logo); // Initialize with default logo
+
+  useEffect(() => {
+    // Update the logo based on the current route
+    if (location.pathname === '/OrgLogin' || location.pathname === '/OrgRegister') {
+      setDynamicLogo(altLogo); // Set an alternative logo for the 'scholarships' route
+    } else {
+      setDynamicLogo(logo); // Set the default logo for other routes
+    }
+  }, [location.pathname]);
+
   return (
     <>
       <header className="container header">
         {/* ==== NAVBAR ==== */}
         <nav className="nav">
-        <div className="logo" data-aos="fade-down" data-aos-duration="100">
-        {/* Link to the homepage or use any other route */}
-        <a href="/" >
-          {/* Replace 'your-logo.png' with the actual image file name and path */}
-          <img src={logo} alt="Scholarix Logo" />
-        </a>
-      </div>
+          <div className="logo" data-aos="fade-down" data-aos-duration="100">
+            {/* Link to the homepage or use any other route */}
+            <a href="/">
+              <img src={dynamicLogo} alt="Scholarix Logo" /> {/* Use dynamicLogo */}
+            </a>
+          </div>
 
           <div className="nav_menu" id="nav_menu">
             <button className="close_btn" id="close_btn">
