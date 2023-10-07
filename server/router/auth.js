@@ -151,6 +151,7 @@ const UserProfile = mongoose.model('UserProfile', {
 
 // Define the route for saving the user profile
 router.put('/profile-update', async (req, res) => {
+  console.log(req.body);
   const {
     username,
     firstName,
@@ -166,20 +167,20 @@ router.put('/profile-update', async (req, res) => {
     }
 
     // Create a new UserProfile instance
-    const userProfile = new UserProfile({
+    const userProfile = await new UserProfile({
       username,
       firstName,
       lastName,
-      orgName: req.body.orgName || '',
-      location: req.body.location || '',
+      orgName: req.body.orgName,
+      location: req.body.location,
       email,
-      phone: req.body.phone || '',
-      birthday: req.body.birthday || null,
-      sscPercentage: req.body.sscPercentage || null,
-      hscPercentage: req.body.hscPercentage || null,
-      cetPercentage: req.body.cetPercentage || null,
-      jeePercentage: req.body.jeePercentage || null,
-      achievements: req.body.achievements || []
+      phone: req.body.phone,
+      birthday: req.body.birthday,
+      sscPercentage: req.body.sscPercentage,
+      hscPercentage: req.body.hscPercentage,
+      cetPercentage: req.body.cetPercentage,
+      jeePercentage: req.body.jeePercentage,
+      achievements: req.body.achievements
     });
 
     // Save the data to the database
