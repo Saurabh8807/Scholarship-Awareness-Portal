@@ -70,6 +70,24 @@ const Banner = () => {
           View Scholarship
         </button>
             </Link> */}
+          <div className="button-container81">
+      <div className="button-wrapper1 btn81">
+        <a href="/eligibles">
+          <button className="btn view-more-btn" id="eligible-button">
+            Eligible Scholarships
+            
+          </button>
+        </a>
+      </div>
+      <div className="button-wrapper1 btn82">
+        <a href="/scholarships">
+          <button className="btn view-more-btn" id="view-button">
+            View Scholarships
+            
+          </button>
+        </a>
+      </div>
+    </div>
             <div
               className="grid-item-1"
               data-aos="fade-up"

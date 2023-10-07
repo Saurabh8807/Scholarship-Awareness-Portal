@@ -2,11 +2,16 @@ import React, { useState } from 'react';
 import OrgHorizon from '../../images/OrgHorizon.png'
 import shobhit from '../../images/shobhit.png'
 import '../cssUser/OrgDash.css';
+import { useNavigate } from 'react-router-dom';
+
 
 const OrgDash = () => {
- 
-
+  const navigate = useNavigate();
+  const redirect=()=>{
+    navigate('/OrgForm')
+  }
   return (
+
     <div>
     <div className="rectangular-component11">
         <div className="text-container11">
@@ -27,6 +32,7 @@ const OrgDash = () => {
         </div>
         <button
                 className="btn view_more_btn"
+                onClick={redirect}
                 style={{
                     height:"10vh",
                     marginBottom:"-4vh",
@@ -38,7 +44,7 @@ const OrgDash = () => {
                     borderRadius:"20px"
                 }}
                 >
-                Book Demo
+                Enter Scholarship 
                 
                   </button>
         <div className="image-container11">

@@ -17,26 +17,6 @@ const Home = () => {
               data-aos="fade-up"
               data-aos-duration="800"
             >
-              
-              
-              <div className="button-container1">
-      <div className="button-wrapper1 btn11">
-        <a href="/eligibles">
-          <button className="btn view-more-btn" id="eligible-button">
-            Eligible Scholarships
-            <i className="ri-arrow-right-line" />
-          </button>
-        </a>
-      </div>
-      <div className="button-wrapper1 btn12">
-        <a href="/scholarships">
-          <button className="btn view-more-btn" id="view-button">
-            View Scholarships
-            <i className="ri-arrow-right-line" />
-          </button>
-        </a>
-      </div>
-    </div>
             </div>
           
           </div>

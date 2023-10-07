@@ -56,6 +56,15 @@ const InternatinalBased = () => {
     return (
       <>
         <Container>
+        <Link
+        style={{ fontSize: "30px", textDecoration: "none", color:"black"}} // Add textDecoration: "none"
+        to="/scholarships"
+        className="back-link"
+
+        
+      >
+        🡸
+      </Link>
           <br/><br/>
           {/* <h1>Scholarships: </h1> */}
           <Row>
