@@ -97,8 +97,8 @@
   }
   .recommended-tag {
     position: absolute;
-    margin-top: 15vh;
-    margin-right: 53vw;
+    margin-top: 13vh;
+    margin-right: 50vw;
     background-color: #2ecc71; /* Green color for the tag */
     color: #fff; /* Tag text color */
     padding: 5px 10px; /* Padding inside the tag */
