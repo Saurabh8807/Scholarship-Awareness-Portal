@@ -5,7 +5,8 @@ import ScholarshipTypes from "../user/ScholarshipTypes";
 import AdminProfile from "./AdminProfile";
 import ViewScholarships from "./ViewScholarships";
 import StudentDetails from "./StudentDetails";
-import PreviousApplicationDetails from "./PreviousApplicationDetails"
+import PreviousApplicationDetails from "./PreviousApplicationDetails";
+import Email from "./Email";
 
 const AdminDashboard = () => {
   return (
@@ -31,6 +32,9 @@ const AdminDashboard = () => {
       </Tab>
       <Tab eventKey="profile" title="Profile" >
         <AdminProfile/>
+      </Tab>
+      <Tab eventKey="email" title="Email" >
+        <Email/>
       </Tab>
     </Tabs>
 

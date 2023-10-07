@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
+
 const session = require('express-session');
+const mongoose = require('mongoose');
 const db =
   'mongodb+srv://admin:admin@cluster0.to2v0dm.mongodb.net/?retryWrites=true&w=majority';
 const User = require('../model/userSchemaa');
@@ -130,6 +132,67 @@ router.put('/register/:id', async (req, res) => {
     res.send(e);
   }
 });
+
+const UserProfile = mongoose.model('UserProfile', {
+  username: String,
+  firstName: String,
+  lastName: String,
+  orgName: String,
+  location: String,
+  email: String,
+  phone: String,
+  birthday: Date,
+  sscPercentage: Number,
+  hscPercentage: Number,
+  cetPercentage: Number,
+  jeePercentage: Number,
+  achievements: String
+});
+
+// Define the route for saving the user profile
+router.put('/profile-update', async (req, res) => {
+  const {
+    username,
+    firstName,
+    lastName,
+    email
+    // Add other required fields here
+  } = req.body;
+
+  try {
+    // Check if required fields are provided
+    if (!username || !firstName || !lastName || !email) {
+      return res.status(400).json({ error: 'Required fields are missing' });
+    }
+
+    // Create a new UserProfile instance
+    const userProfile = new UserProfile({
+      username,
+      firstName,
+      lastName,
+      orgName: req.body.orgName || '',
+      location: req.body.location || '',
+      email,
+      phone: req.body.phone || '',
+      birthday: req.body.birthday || null,
+      sscPercentage: req.body.sscPercentage || null,
+      hscPercentage: req.body.hscPercentage || null,
+      cetPercentage: req.body.cetPercentage || null,
+      jeePercentage: req.body.jeePercentage || null,
+      achievements: req.body.achievements || []
+    });
+
+    // Save the data to the database
+    await userProfile.save();
+
+    res.status(201).json({ message: 'Profile saved successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Error saving profile' });
+  }
+});
+
+router.get('/get-user-data', async (req, res) => {});
 
 router.post('/logout', (req, res) => {
   if (req.session.isLoggedIn) {

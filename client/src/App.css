@@ -24,7 +24,9 @@
   --text-content: #869ab8;
   --fixed-header-height: 4.5rem;
 }
-
+.rect{
+  margin-top: -85vh;
+}
 /* ==== RESET HTML ==== */
 body {
   width: 100%;

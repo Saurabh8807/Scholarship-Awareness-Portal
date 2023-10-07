@@ -17,11 +17,16 @@ import ResearchBased from "./components/user/ResearchBased";
 import InternatinalBased from "./components/user/InternatinalBased";
 import MinorityBased from "./components/user/MinorityBased";
 import Details from "./components/user/Details";
+
 import Question from "./components/user/Question";
 import OrgRegister from "./components/user/OrgRegister";
 import Government from "./components/user/GovernmentBased";
 import OrgForm from "./components/user/OrgForm";
 import OrgDash from "./components/user/OrgDash";
+import Eligibles from "./components/user/Eligibles";
+
+
+
 // Admin Pages
 import AddScholarship from "./components/admin/AddScholarship";
 import AdminDashboard from "./components/admin/AdminDashboard";
@@ -32,6 +37,9 @@ import StudentDetails from "./components/admin/StudentDetails";
 import UpdateScholarship from "./components/admin/UpdateScholarship";
 import ViewScholarships from "./components/admin/ViewScholarships";
 import axios from "axios";
+import Question from "./components/user/Question";
+import OrgRegister from "./components/user/OrgRegister";
+import Government from "./components/user/GovernmentBased";
 
 import { UserProvider } from "./context/auth";
 import PrivateRoute from "./context/PrivateRoute";
@@ -87,6 +95,7 @@ const App = () => {
           <Route path="/OrgRegister" element={<OrgRegister/>}/>
           <Route path="/OrgForm" element={<OrgForm/>}/>
           <Route path="/OrgDash" element={<OrgDash/>}/>
+          <Route path="/Eligibles" element={<Eligibles/>}/>
 
           {/* Admin Pages */}
           <Route path="/add-scholarship" element={<AddScholarship />}></Route>
@@ -101,6 +110,9 @@ const App = () => {
             path="/adminDashboard/previousApplicationsDetails"
             element={<PreviousApplicationDetails />}
           />
+          <Route path="/Question" element={<Question/>}/>
+          <Route path="/OrgLogin" element={<Orglogin/>}/>
+          <Route path="/OrgRegister" element={<OrgRegister/>}/>
           <Route
             path="/update-scholarship/:id"
             element={<UpdateScholarship />}
