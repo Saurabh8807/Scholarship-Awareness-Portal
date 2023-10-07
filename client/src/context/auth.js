@@ -22,14 +22,6 @@ export const UserProvider = ({ children }) => {
     }
   }, []);
 
-  //   const login = (user) => {
-  //     setLoggedIn(true);
-  //     setUser(user);
-
-  //     localStorage.setItem("loggedIn", true);
-  //     localStorage.setItem("user", JSON.stringify(user));
-  //   };
-
   return (
     <UserContext.Provider
       value={{

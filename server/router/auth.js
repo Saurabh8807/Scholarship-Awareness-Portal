@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+
 const session = require('express-session');
 const mongoose = require('mongoose');
 const db =
@@ -145,11 +146,11 @@ const UserProfile = mongoose.model('UserProfile', {
   hscPercentage: Number,
   cetPercentage: Number,
   jeePercentage: Number,
-  achievements: [String]
+  achievements: String
 });
 
 // Define the route for saving the user profile
-router.post('/profile-update', async (req, res) => {
+router.put('/profile-update', async (req, res) => {
   const {
     username,
     firstName,
@@ -190,6 +191,8 @@ router.post('/profile-update', async (req, res) => {
     res.status(500).json({ error: 'Error saving profile' });
   }
 });
+
+router.get('/get-user-data', async (req, res) => {});
 
 router.post('/logout', (req, res) => {
   if (req.session.isLoggedIn) {
