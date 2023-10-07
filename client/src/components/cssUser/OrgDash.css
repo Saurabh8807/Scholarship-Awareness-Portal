@@ -1,6 +1,6 @@
 .sentence11{
     /* margin-top: 10vh; */
-    font-size: 64px;
+    font-size: 50px;
     font-weight: 800;
     font-family:sans-serif;
 }
@@ -17,8 +17,7 @@
     color: rgb(128, 120, 120);
     font-weight: 700;
     font-family:sans-serif;
-    text-decoration:
-none solid rgb(122, 122, 122)
+    text-decoration:none solid rgb(122, 122, 122)
 }
 .text-container11{
     margin-top: 10vh;

@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link } from "react-router-dom"
+
 
 // Define the Scholarship component to render each scholarship entry
 function Scholarship({ title, deadline, amount, link }) {
@@ -44,6 +46,15 @@ function Scholarship({ title, deadline, amount, link }) {
 function ScholarshipList({ scholarships }) {
   return (
     <div className="scholarship-list">
+      <Link
+        style={{ fontSize: "30px", textDecoration: "none", color:"black"}} // Add textDecoration: "none"
+        to="/scholarships"
+        className="back-link"
+
+        
+      >
+        🡸
+      </Link>
       <div
         style={{
           display: 'grid',
