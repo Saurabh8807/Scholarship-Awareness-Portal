@@ -17,6 +17,7 @@ import ResearchBased from "./components/user/ResearchBased";
 import InternatinalBased from "./components/user/InternatinalBased";
 import MinorityBased from "./components/user/MinorityBased";
 import Details from "./components/user/Details";
+import Prediction from "./components/user/Prediction";
 
 import Question from "./components/user/Question";
 import OrgRegister from "./components/user/OrgRegister";
@@ -96,6 +97,7 @@ const App = () => {
           <Route path="/OrgForm" element={<OrgForm/>}/>
           <Route path="/OrgDash" element={<OrgDash/>}/>
           <Route path="/Eligibles" element={<Eligibles/>}/>
+          <Route path="/Prediction" element={<Prediction/>}/>
 
           {/* Admin Pages */}
           <Route path="/add-scholarship" element={<AddScholarship />}></Route>
