@@ -20,6 +20,8 @@ import Details from "./components/user/Details";
 import Question from "./components/user/Question";
 import OrgRegister from "./components/user/OrgRegister";
 import Government from "./components/user/GovernmentBased";
+import OrgForm from "./components/user/OrgForm";
+import OrgDash from "./components/user/OrgDash";
 // Admin Pages
 import AddScholarship from "./components/admin/AddScholarship";
 import AdminDashboard from "./components/admin/AdminDashboard";
@@ -83,6 +85,8 @@ const App = () => {
           <Route path="/Question" element={<Question/>}/>
           <Route path="/OrgLogin" element={<Orglogin/>}/>
           <Route path="/OrgRegister" element={<OrgRegister/>}/>
+          <Route path="/OrgForm" element={<OrgForm/>}/>
+          <Route path="/OrgDash" element={<OrgDash/>}/>
 
           {/* Admin Pages */}
           <Route path="/add-scholarship" element={<AddScholarship />}></Route>
