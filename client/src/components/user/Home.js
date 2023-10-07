@@ -9,10 +9,6 @@ const Home = () => {
   return (
     <>
       <section className="wrapper">
-      <h1 className="main-heading">
-                Welcome to <span>Scholarship</span>
-                <br />
-              </h1>
         <div className="container">
           <Banner/>
           <div className="grid-cols-2">
